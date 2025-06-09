@@ -1,9 +1,8 @@
 import streamlit as st
 import openai
-from langchain.llms import OpenAI
-from langchain.prompts import PromptTemplate
+from langchain_openai import OpenAI
+from langchain_core.prompts import PromptTemplate
 from langchain.chains import LLMChain
-from langchain.agents import initialize_agent, Tool, AgentType
 from langchain.memory import ConversationBufferMemory
 import PyPDF2
 import io
